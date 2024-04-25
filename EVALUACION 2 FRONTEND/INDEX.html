@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <!--Titulo de la pestaña-->
+        <title>COPRODLAR: Cooperativa de productores lecheros de la region de la Araucania</title>
+        <!--Enlace de archivo con scripts javascript-->
+        <script src="js/funciones.js"></script>
+        <!--Enlace de archivo con estilos CSS externos-->
+        <link rel="stylesheet" href="CSS/estilos.css">
+        <!--Enlace de archivo con framework Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+        crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+        crossorigin="anonymous"></script>
+        <!--Aplicacion de estilo CSS interno, aplicado a toda la pagina-->
+        <style>
+          body{
+          background-color: #c3d8ef;
+          }
+        </style>
+    </head>
+    <body>
+        <!--Se usa clase container para aplicar margenes y orden a todo el cuerpo con bootstrap-->
+        <div class="container">
+        <div  id="titulo_principal" style="text-align: center";>
+            <h1>COPRODLAR: </h1>
+            <h1>Cooperativa de productores lecheros de la region de la Araucania</h1>
+        </div>
+        <hr>
+        <!--Barra de Navegacion-->
+        <div id="navbar" style="text-align: center";>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #89c8f5;">
+            <!--Primer enlace, sin destino-->
+            <a class="navbar-brand" href="#">COPRODLAR</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Quienes Somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nuestros Colaboradores</a>
+                  </li>
+                  <!--Elemento con dropdown o lista desplegable-->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false">
+                      Productos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Leche</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Quesos</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Postres</a>
+                    </div>
+                </li>
+                  <!--Elemento deshabilitado pero visible-->
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Compra online(Proximamente)</a>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Que busca?" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+              </div>
+        </nav>
+        </div>
+        <hr>
+        <!--Componente Carrusel-->
+        <div id="carrusel" class="carousel slide">
+          <!--Atajos a diapositivas del carrusel-->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <!--Diapositivas del carrusel-->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://vancamps.com.co/sites/default/files/inline-images/banner_principal_1.png" height="600" 
+              class="d-block w-100" alt="Imagen de quesos artesanales">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Quesos COPRODLAR</h5>
+                <p>Explora tus sentidos con nuestros quesos artesanales.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.eloccidental.com.mx/incoming/n5ivq0-leche.afp.jpg/ALTERNATES/LANDSCAPE_768/leche.afp.jpg" height="600" 
+              class="d-block w-100" alt="imagen de leche en frasco de vidrio">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Lacteos COPROLAD</h5>
+                <p>Deleitate con nuestras leches envasadas.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.quesospincheira.cl/wp-content/uploads/2020/09/mantequilla-artesanal.jpg" height="600" 
+              class="d-block w-100" alt="Imagen de bloque de mantequilla">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Mantequilla COPRODLAR</h5>
+                <p>Alucina con nuestra cremosa mantequilla.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Botones Anterior y Siguiente-->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        <hr>
+        <!--Elemento formulario-->
+        <div id="formulario" style="text-align: left";>
+        <h1>INSCRIBETE PARA GANAR UN PACK DE PRODUCTOS DE CORTESIA</h1>
+        <p >Llena el siguiente formulario para recibir directo en tu casa un pack de productos COPRODLAR:</p>
+        <form>
+          <!--Entrada de nombre-->
+          <div class="mb-3">
+            <label for="txt_nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="txt_nombre" aria-describedby="txt_nombre_help">
+            <div id="txt_nombre_help" class="form-text">Ingrese su nombre completo.</div>
+          </div>
+          <!-- Entrada de telefono-->
+          <div class="mb-3">
+            <label for="txt_telefono" class="form-label">Telefono</label>
+            <input type="number" class="form-control" id="txt_telefono" aria-describedby="txt_telefono_help">
+            <div id="txt_telefono_help" class="form-text">Ingrese su numero telefonico. Recuerde ingresar solo numeros.</div>
+          </div>
+          <!-- Entrada de direccion-->
+          <div class="mb-3">
+            <label for="txt_direccion" class="form-label">Direccion</label>
+            <input type="text" class="form-control" id="txt_direccion" aria-describedby="txt_direccion_help">
+            <div id="txt_direccion_help" class="form-text">Ingrese su direccion completa indicando region y comuna.</div>
+          </div>
+          <!--Boton para enviar, no hace nada-->
+          <input type="button" value="Enviar" class="btn btn-info">
+        </form>
+        </div>
+        <!--Componentes de tarjetas-->
+        <!--Se usa clase card-group para agrupar las cartas en una grid-->
+        <!--Se agrega altura fija a todas las cartas para que queden alineadas con el mismo tamaño-->
+        <div id="tarjetas" class="card-group">
+          <!--Aplica estilo css inline, dentro de la misma etiqueta:-->
+          <div class="card text-bg-light mb-3" style="width: 18rem;">
+            <img src="https://comercioyjusticia.info/wp-content/uploads/2020/07/rsz_lecheria.jpg" class="card-img-top" 
+            alt="Imagen de industria lechera" style="height:250px;">
+            <div class="card-body">
+              <h5 class="card-title">Visita nuestra Fabrica</h5>
+              <p class="card-text">Agenda una visita a nuestra fabrica para conocer nuestros procesos de elaboracion.</p>
+              <a href="#" class="btn btn-primary">Agenda ya</a>
+            </div>
+          </div>
+          <div class="card text-bg-light mb-3" style="width: 18rem;">
+            <img src="https://continuos.com/wp-content/uploads/Talonarios-927x675.jpg" 
+            class="card-img-top" alt="Imagen de un formulario para cotizar" style="height:250px;">
+            <div class="card-body">
+              <h5 class="card-title">Cotiza nuestros productos</h5>
+              <p class="card-text">Si deseas cotizar nuestros productos al por mayor, pincha el siguiente boton.</p>
+              <a href="#" class="btn btn-primary">Cotizar</a>
+            </div>
+          </div>
+          <div class="card text-bg-light mb-3" style="width: 18rem;">
+            <img src="https://img.freepik.com/foto-gratis/tiro-primer-apreton-manos-negocio-captura-recortada-dos-personas-trajes-formales-dandose-mano-concepto-apreton-manos-negocios_1262-21017.jpg" 
+            class="card-img-top" alt="Imagen de dos personas dandose la mano" style="height:250px;">
+            <div class="card-body">
+              <h5 class="card-title">Trabaja con nosotros</h5>
+              <p class="card-text">Enterate de las vacantes que tenemos disponibles para trabajar con nosotros.</p>
+              <a href="#" class="btn btn-primary">Postula aqui</a>
+            </div>
+          </div>
+        </div>
+      <hr>
+      </div>
+    </body>
+</html>
